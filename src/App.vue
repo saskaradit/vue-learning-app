@@ -1,31 +1,16 @@
 <template>
   <the-header title="Learning Resources"></the-header>
+  <the-resource></the-resource>
 </template>
 
 <script>
 import TheHeader from './components/UI/TheHeader';
+import TheResource from './components/learning-resource/TheResource';
 
 export default {
   components: {
-    TheHeader
-  },
-  data() {
-    return {
-      storedResources: [
-        {
-          id: '124D',
-          title: `Read The Fuckin' Manual`,
-          description: 'The official Manual',
-          link: 'https://youtube.com'
-        },
-        {
-          id: '8121T',
-          title: 'Read The Bread',
-          description: 'The official Bread',
-          link: 'https://google.com'
-        }
-      ]
-    };
+    TheHeader,
+    TheResource
   }
 };
 </script>
